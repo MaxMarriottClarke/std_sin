@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/afs/cern.ch/user/m/mmarriot/private/std_sin/build",
-  "command": "/usr/bin/c++ -DBENCHMARK_STATIC_DEFINE -I/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/include -std=gnu++2a -pthread -o CMakeFiles/sin_lut.dir/sin_lut.cpp.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/sin_lut.cpp",
-  "file": "/afs/cern.ch/user/m/mmarriot/private/std_sin/sin_lut.cpp",
-  "output": "CMakeFiles/sin_lut.dir/sin_lut.cpp.o"
-}
-]

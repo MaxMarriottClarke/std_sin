@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/sin_lut.dir/sin_lut.cpp.o -o sin_lut  _deps/benchmark-build/src/libbenchmark.a -pthread -lrt -lpthread 
