@@ -1,0 +1,1460 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 4.18.0-553.54.1.el8_10.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/3.26.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/3.26.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-8KFqNE"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-8KFqNE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-8KFqNE
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fc88f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc88f.dir/build.make CMakeFiles/cmTC_fc88f.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-8KFqNE'
+        Building C object CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -version -o /tmp/mmarriot/ccwvUvCp.s
+        GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/8/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 0e9df24a891a83204ca90c1489dbf797
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o /tmp/mmarriot/ccwvUvCp.s
+        GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-127.el8_10
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_fc88f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc88f.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -o cmTC_fc88f 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc88f' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/mmarriot/cc8PXTDj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fc88f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc88f' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-8KFqNE'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-8KFqNE]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fc88f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc88f.dir/build.make CMakeFiles/cmTC_fc88f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-8KFqNE']
+        ignore line: [Building C object CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -version -o /tmp/mmarriot/ccwvUvCp.s]
+        ignore line: [GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 0e9df24a891a83204ca90c1489dbf797]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o /tmp/mmarriot/ccwvUvCp.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-127.el8_10]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_fc88f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc88f.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -o cmTC_fc88f ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc88f' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/mmarriot/cc8PXTDj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fc88f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/mmarriot/cc8PXTDj.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_fc88f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
+          arg [CMakeFiles/cmTC_fc88f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/8;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-1xEQat"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-1xEQat"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-1xEQat
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_59110/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59110.dir/build.make CMakeFiles/cmTC_59110.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-1xEQat'
+        Building CXX object CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/mmarriot/ccMndjZc.s
+        GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward
+         /usr/lib/gcc/x86_64-redhat-linux/8/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f2aaa7b4ec00d9cad600207e0387e9f3
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o /tmp/mmarriot/ccMndjZc.s
+        GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-127.el8_10
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_59110
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59110.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_59110 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_59110' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/mmarriot/ccdd0ial.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_59110 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_59110' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-1xEQat'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8] ==> [/usr/include/c++/8]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux] ==> [/usr/include/c++/8/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward] ==> [/usr/include/c++/8/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/8;/usr/include/c++/8/x86_64-redhat-linux;/usr/include/c++/8/backward;/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-1xEQat]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_59110/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59110.dir/build.make CMakeFiles/cmTC_59110.dir/build]
+        ignore line: [gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-1xEQat']
+        ignore line: [Building CXX object CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/mmarriot/ccMndjZc.s]
+        ignore line: [GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-28) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-28)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f2aaa7b4ec00d9cad600207e0387e9f3]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o /tmp/mmarriot/ccMndjZc.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-127.el8_10]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_59110]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59110.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_59110 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_59110' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/mmarriot/ccdd0ial.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_59110 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/mmarriot/ccdd0ial.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_59110] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
+          arg [CMakeFiles/cmTC_59110.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/8;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:135 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-vo9FZW"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-vo9FZW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-vo9FZW
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a9df3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a9df3.dir/build.make CMakeFiles/cmTC_a9df3.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-vo9FZW'
+        Building C object CMakeFiles/cmTC_a9df3.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shm_open -o CMakeFiles/cmTC_a9df3.dir/CheckFunctionExists.c.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-vo9FZW/CheckFunctionExists.c
+        Linking C executable cmTC_a9df3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9df3.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shm_open CMakeFiles/cmTC_a9df3.dir/CheckFunctionExists.c.o -o cmTC_a9df3  -lrt 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-vo9FZW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:188 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-GqGdeS"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-GqGdeS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-GqGdeS
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8a15d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8a15d.dir/build.make CMakeFiles/cmTC_8a15d.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-GqGdeS'
+        Building CXX object CMakeFiles/cmTC_8a15d.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WALL  -Wall -std=c++17   -Wall -o CMakeFiles/cmTC_8a15d.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-GqGdeS/src.cxx
+        Linking CXX executable cmTC_8a15d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a15d.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall CMakeFiles/cmTC_8a15d.dir/src.cxx.o -o cmTC_8a15d 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-GqGdeS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:189 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0CXqdq"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0CXqdq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0CXqdq
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fc381/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc381.dir/build.make CMakeFiles/cmTC_fc381.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0CXqdq'
+        Building CXX object CMakeFiles/cmTC_fc381.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -std=c++17   -Wextra -o CMakeFiles/cmTC_fc381.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0CXqdq/src.cxx
+        Linking CXX executable cmTC_fc381
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc381.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra CMakeFiles/cmTC_fc381.dir/src.cxx.o -o cmTC_fc381 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0CXqdq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:190 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PX9zLh"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PX9zLh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PX9zLh
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5293a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5293a.dir/build.make CMakeFiles/cmTC_5293a.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PX9zLh'
+        Building CXX object CMakeFiles/cmTC_5293a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -std=c++17   -Wshadow -o CMakeFiles/cmTC_5293a.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PX9zLh/src.cxx
+        Linking CXX executable cmTC_5293a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5293a.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow CMakeFiles/cmTC_5293a.dir/src.cxx.o -o cmTC_5293a 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PX9zLh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:191 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-CAY6g2"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-CAY6g2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-CAY6g2
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce678/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ce678.dir/build.make CMakeFiles/cmTC_ce678.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-CAY6g2'
+        Building CXX object CMakeFiles/cmTC_ce678.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++17   -Wfloat-equal -o CMakeFiles/cmTC_ce678.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-CAY6g2/src.cxx
+        Linking CXX executable cmTC_ce678
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce678.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal CMakeFiles/cmTC_ce678.dir/src.cxx.o -o cmTC_ce678 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-CAY6g2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:192 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-RCJiDE"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-RCJiDE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-RCJiDE
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d7c29/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d7c29.dir/build.make CMakeFiles/cmTC_d7c29.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-RCJiDE'
+        Building CXX object CMakeFiles/cmTC_d7c29.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++17   -Wold-style-cast -o CMakeFiles/cmTC_d7c29.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-RCJiDE/src.cxx
+        Linking CXX executable cmTC_d7c29
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7c29.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast CMakeFiles/cmTC_d7c29.dir/src.cxx.o -o cmTC_d7c29 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-RCJiDE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:193 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-rEntWc"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-rEntWc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-rEntWc
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c50ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c50ce.dir/build.make CMakeFiles/cmTC_c50ce.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-rEntWc'
+        Building CXX object CMakeFiles/cmTC_c50ce.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WCONVERSION  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -std=c++17   -Wconversion -o CMakeFiles/cmTC_c50ce.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-rEntWc/src.cxx
+        Linking CXX executable cmTC_c50ce
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c50ce.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion CMakeFiles/cmTC_c50ce.dir/src.cxx.o -o cmTC_c50ce 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-rEntWc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:195 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-HmbCvo"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-HmbCvo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-HmbCvo
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ca2f2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ca2f2.dir/build.make CMakeFiles/cmTC_ca2f2.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-HmbCvo'
+        Building CXX object CMakeFiles/cmTC_ca2f2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -std=c++17   -Werror -o CMakeFiles/cmTC_ca2f2.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-HmbCvo/src.cxx
+        Linking CXX executable cmTC_ca2f2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca2f2.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror CMakeFiles/cmTC_ca2f2.dir/src.cxx.o -o cmTC_ca2f2 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-HmbCvo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:199 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-aS2Eda"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-aS2Eda"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-aS2Eda
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0cfa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0cfa.dir/build.make CMakeFiles/cmTC_f0cfa.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-aS2Eda'
+        Building CXX object CMakeFiles/cmTC_f0cfa.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSUGGEST_OVERRIDE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override -std=c++17   -Wsuggest-override -o CMakeFiles/cmTC_f0cfa.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-aS2Eda/src.cxx
+        Linking CXX executable cmTC_f0cfa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0cfa.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override CMakeFiles/cmTC_f0cfa.dir/src.cxx.o -o cmTC_f0cfa 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-aS2Eda'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:201 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0ymCgJ"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0ymCgJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0ymCgJ
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_47f5e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47f5e.dir/build.make CMakeFiles/cmTC_47f5e.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0ymCgJ'
+        Building CXX object CMakeFiles/cmTC_47f5e.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic -std=c++17   -pedantic -o CMakeFiles/cmTC_47f5e.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0ymCgJ/src.cxx
+        Linking CXX executable cmTC_47f5e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47f5e.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic CMakeFiles/cmTC_47f5e.dir/src.cxx.o -o cmTC_47f5e 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0ymCgJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:202 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-MGVCH9"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-MGVCH9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-MGVCH9
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9eb0d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9eb0d.dir/build.make CMakeFiles/cmTC_9eb0d.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-MGVCH9'
+        Building CXX object CMakeFiles/cmTC_9eb0d.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -std=c++17   -pedantic-errors -o CMakeFiles/cmTC_9eb0d.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-MGVCH9/src.cxx
+        Linking CXX executable cmTC_9eb0d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9eb0d.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors CMakeFiles/cmTC_9eb0d.dir/src.cxx.o -o cmTC_9eb0d 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-MGVCH9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:203 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-KiKa2r"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-KiKa2r"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-KiKa2r
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_deac0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_deac0.dir/build.make CMakeFiles/cmTC_deac0.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-KiKa2r'
+        Building CXX object CMakeFiles/cmTC_deac0.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++17   -Wshorten-64-to-32 -o CMakeFiles/cmTC_deac0.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-KiKa2r/src.cxx
+        c++: error: unrecognized command line option '-Wshorten-64-to-32'
+        c++: error: unrecognized command line option '-Wshorten-64-to-32'
+        gmake[1]: *** [CMakeFiles/cmTC_deac0.dir/build.make:78: CMakeFiles/cmTC_deac0.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-KiKa2r'
+        gmake: *** [Makefile:127: cmTC_deac0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:204 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-fD0f0V"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-fD0f0V"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-fD0f0V
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9ad9f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ad9f.dir/build.make CMakeFiles/cmTC_9ad9f.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-fD0f0V'
+        Building CXX object CMakeFiles/cmTC_9ad9f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing -std=c++17   -fstrict-aliasing -o CMakeFiles/cmTC_9ad9f.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-fD0f0V/src.cxx
+        Linking CXX executable cmTC_9ad9f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ad9f.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing CMakeFiles/cmTC_9ad9f.dir/src.cxx.o -o cmTC_9ad9f 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-fD0f0V'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:207 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-pzJO7r"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-pzJO7r"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-pzJO7r
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed6c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed6c3.dir/build.make CMakeFiles/cmTC_ed6c3.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-pzJO7r'
+        Building CXX object CMakeFiles/cmTC_ed6c3.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++17   -Wno-deprecated-declarations -o CMakeFiles/cmTC_ed6c3.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-pzJO7r/src.cxx
+        Linking CXX executable cmTC_ed6c3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed6c3.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations CMakeFiles/cmTC_ed6c3.dir/src.cxx.o -o cmTC_ed6c3 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-pzJO7r'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:217 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VTdWiF"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VTdWiF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VTdWiF
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_139c1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_139c1.dir/build.make CMakeFiles/cmTC_139c1.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VTdWiF'
+        Building CXX object CMakeFiles/cmTC_139c1.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++17   -Wno-deprecated -o CMakeFiles/cmTC_139c1.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VTdWiF/src.cxx
+        Linking CXX executable cmTC_139c1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_139c1.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated CMakeFiles/cmTC_139c1.dir/src.cxx.o -o cmTC_139c1 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VTdWiF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:225 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bwnox6"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bwnox6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bwnox6
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33924/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_33924.dir/build.make CMakeFiles/cmTC_33924.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bwnox6'
+        Building CXX object CMakeFiles/cmTC_33924.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++17   -Wstrict-aliasing -o CMakeFiles/cmTC_33924.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bwnox6/src.cxx
+        Linking CXX executable cmTC_33924
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33924.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing CMakeFiles/cmTC_33924.dir/src.cxx.o -o cmTC_33924 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bwnox6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:230 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WD654"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0y1nT3"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0y1nT3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WD654"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0y1nT3
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e780/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e780.dir/build.make CMakeFiles/cmTC_4e780.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0y1nT3'
+        Building CXX object CMakeFiles/cmTC_4e780.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++17   -wd654 -o CMakeFiles/cmTC_4e780.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0y1nT3/src.cxx
+        c++: error: unrecognized command line option '-wd654'
+        c++: error: unrecognized command line option '-wd654'
+        gmake[1]: *** [CMakeFiles/cmTC_4e780.dir/build.make:78: CMakeFiles/cmTC_4e780.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-0y1nT3'
+        gmake: *** [Makefile:127: cmTC_4e780/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:231 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bXzilf"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bXzilf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bXzilf
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83271/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_83271.dir/build.make CMakeFiles/cmTC_83271.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bXzilf'
+        Building CXX object CMakeFiles/cmTC_83271.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++17   -Wthread-safety -o CMakeFiles/cmTC_83271.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bXzilf/src.cxx
+        c++: error: unrecognized command line option '-Wthread-safety'; did you mean '-fthread-jumps'?
+        c++: error: unrecognized command line option '-Wthread-safety'; did you mean '-fthread-jumps'?
+        gmake[1]: *** [CMakeFiles/cmTC_83271.dir/build.make:78: CMakeFiles/cmTC_83271.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-bXzilf'
+        gmake: *** [Makefile:127: cmTC_83271/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:282 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-SQeI0q"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-SQeI0q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-SQeI0q
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_75d9b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_75d9b.dir/build.make CMakeFiles/cmTC_75d9b.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-SQeI0q'
+        Building CXX object CMakeFiles/cmTC_75d9b.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage -std=c++17   --coverage -o CMakeFiles/cmTC_75d9b.dir/src.cxx.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-SQeI0q/src.cxx
+        Linking CXX executable cmTC_75d9b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75d9b.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage CMakeFiles/cmTC_75d9b.dir/src.cxx.o -o cmTC_75d9b 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-SQeI0q'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:312 (cxx_feature_check)"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc9e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc9e6.dir/build.make CMakeFiles/cmTC_cc9e6.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_cc9e6.dir/std_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_cc9e6.dir/std_regex.cpp.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/std_regex.cpp
+        Linking CXX executable cmTC_cc9e6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc9e6.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_cc9e6.dir/std_regex.cpp.o -o cmTC_cc9e6 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:313 (cxx_feature_check)"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_871a9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_871a9.dir/build.make CMakeFiles/cmTC_871a9.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_871a9.dir/gnu_posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_871a9.dir/gnu_posix_regex.cpp.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/gnu_posix_regex.cpp
+        /afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/gnu_posix_regex.cpp:1:10: fatal error: gnuregex.h: No such file or directory
+         #include <gnuregex.h>
+                  ^~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_871a9.dir/build.make:78: CMakeFiles/cmTC_871a9.dir/gnu_posix_regex.cpp.o] Error 1
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_871a9/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:314 (cxx_feature_check)"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d3083/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d3083.dir/build.make CMakeFiles/cmTC_d3083.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_d3083.dir/posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_d3083.dir/posix_regex.cpp.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_d3083
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3083.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_d3083.dir/posix_regex.cpp.o -o cmTC_d3083 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:323 (cxx_feature_check)"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5e06/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b5e06.dir/build.make CMakeFiles/cmTC_b5e06.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_b5e06.dir/steady_clock.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_b5e06.dir/steady_clock.cpp.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_b5e06
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5e06.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_b5e06.dir/steady_clock.cpp.o -o cmTC_b5e06 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:326 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-XlYaAb"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-XlYaAb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-XlYaAb
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f125/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f125.dir/build.make CMakeFiles/cmTC_8f125.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-XlYaAb'
+        Building C object CMakeFiles/cmTC_8f125.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8f125.dir/src.c.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-XlYaAb/src.c
+        Linking C executable cmTC_8f125
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f125.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_8f125.dir/src.c.o -o cmTC_8f125 
+        CMakeFiles/cmTC_8f125.dir/src.c.o: In function `main':
+        src.c:(.text+0x2d): undefined reference to `pthread_create'
+        src.c:(.text+0x39): undefined reference to `pthread_detach'
+        src.c:(.text+0x45): undefined reference to `pthread_cancel'
+        src.c:(.text+0x56): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_8f125.dir/build.make:99: cmTC_8f125] Error 1
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-XlYaAb'
+        gmake: *** [Makefile:127: cmTC_8f125/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindThreads.cmake:136 (try_compile)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:169 (_threads_check_flag_pthread)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:326 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PI9GZh"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PI9GZh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PI9GZh
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72296/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_72296.dir/build.make CMakeFiles/cmTC_72296.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PI9GZh'
+        Building C object CMakeFiles/cmTC_72296.dir/CheckForPthreads.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_72296.dir/CheckForPthreads.c.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PI9GZh/CheckForPthreads.c
+        Linking C executable cmTC_72296
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72296.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_72296.dir/CheckForPthreads.c.o -o cmTC_72296  -pthread 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-PI9GZh'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build/_deps/benchmark-src/CMakeLists.txt:327 (cxx_feature_check)"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/Modules;/afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6fc80/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6fc80.dir/build.make CMakeFiles/cmTC_6fc80.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_6fc80.dir/pthread_affinity.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_6fc80.dir/pthread_affinity.cpp.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/_deps/benchmark-src/cmake/pthread_affinity.cpp
+        Linking CXX executable cmTC_6fc80
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fc80.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_6fc80.dir/pthread_affinity.cpp.o -o cmTC_6fc80 
+        CMakeFiles/cmTC_6fc80.dir/pthread_affinity.cpp.o: In function `main':
+        pthread_affinity.cpp:(.text+0x119): undefined reference to `pthread_getaffinity_np'
+        pthread_affinity.cpp:(.text+0x13f): undefined reference to `pthread_setaffinity_np'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_6fc80.dir/build.make:99: cmTC_6fc80] Error 1
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_6fc80/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_PTHREAD_AFFINITY"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VQNhNT"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VQNhNT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VQNhNT
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e758f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e758f.dir/build.make CMakeFiles/cmTC_e758f.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VQNhNT'
+        Building C object CMakeFiles/cmTC_e758f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_e758f.dir/CheckFunctionExists.c.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VQNhNT/CheckFunctionExists.c
+        Linking C executable cmTC_e758f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e758f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_e758f.dir/CheckFunctionExists.c.o -o cmTC_e758f  -lpthreads 
+        /usr/bin/ld: cannot find -lpthreads
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_e758f.dir/build.make:99: cmTC_e758f] Error 1
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-VQNhNT'
+        gmake: *** [Makefile:127: cmTC_e758f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-eVXvmv"
+      binary: "/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-eVXvmv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-eVXvmv
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_adc27/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_adc27.dir/build.make CMakeFiles/cmTC_adc27.dir/build
+        gmake[1]: Entering directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-eVXvmv'
+        Building C object CMakeFiles/cmTC_adc27.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_adc27.dir/CheckFunctionExists.c.o -c /afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-eVXvmv/CheckFunctionExists.c
+        Linking C executable cmTC_adc27
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc27.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_adc27.dir/CheckFunctionExists.c.o -o cmTC_adc27  -lpthread 
+        gmake[1]: Leaving directory '/afs/cern.ch/user/m/mmarriot/private/std_sin/build/CMakeFiles/CMakeScratch/TryCompile-eVXvmv'
+        
+      exitCode: 0
+...
