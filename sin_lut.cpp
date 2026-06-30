@@ -20,7 +20,7 @@
 #include <string_view>
 #include <vector>
 
-#include "benchmark.h"
+#include <benchmark/benchmark.h>
 
 template <std::floating_point T, std::size_t N = 256 << sizeof(T)>
   constexpr std::array<T, N + 1>
